@@ -1,28 +1,26 @@
 package com.company;
-import java.util.Scanner;
-public class Palindrome {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Введите слово: ");
-        String s=sc.next();
-        isPalindrome(s);
 
+public class Palindrome {
+    public static void main(String[] args){
+        for (int i=0;i<args.length; i++) {
+            String s = args[i];
+            System.out.print(isPalindrome(s)+"\n");
+        }
     }
     public static String reverseString(String s) {
-        String rez = "";
-        for (int i = s.length() - 1; i >= 0; i--)
-        rez = rez + s.charAt(i);
-        return rez;
+        String r = "";
+        for (int i = s.length() - 1; i>=0;i--){
+            r= r + s.charAt(i);
+        }
+        return r;
     }
-
-    public static Boolean isPalindrome(String s) {
-        if(s.equals(reverseString(s))){
-            System.out.println("Полиндром");
+    public static boolean isPalindrome(String s){
+        String r = reverseString(s);
+        if (s.equals(r)) {
+            return true;
         }
-        else{
-            System.out.println("Не полиндром");
+        else {
+            return false;
         }
-        return s.equals(reverseString(s));
-
     }
 }
