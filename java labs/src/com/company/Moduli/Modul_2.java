@@ -1,17 +1,18 @@
 package com.company;
 import java.util.Scanner;
+
 public class Modul_2 {
     public static void main(String[] args) {
-    Tasks1();
-    Tasks2();
-    Tasks3();
-    Tasks4();
-        Tasks5();
-        Tasks6();
+    //Tasks1();
+    //Tasks2();
+    //Tasks3();
+    //Tasks4();
+        //Tasks5();
+       // Tasks6();
         Tasks7();
-        Tasks8();
-        Tasks9();
-        Tasks10();
+        //Tasks8();
+        //Tasks9();
+        //Tasks10();
 
     }
 
@@ -152,13 +153,26 @@ public class Modul_2 {
         System.out.print("Enter a line: ");
         String l = sc.nextLine();
         System.out.print("Result: ");
-        try {
-            double num = Double.parseDouble(l);
-        } catch (NumberFormatException e) {
-            System.out.print(false);;
+        int [] arr = {1,2,3,4,5,6,7,8,9,0};
+        int count=0;
+        if (l.length()>5) {
+            System.out.println(false);
         }
+        for (int i=0; i<l.length();i++)
+        {
+            if (l.charAt(i)==' ')
+            {
+                System.out.println(false);
+            }
 
-        if (l.length()<=5){
+            for (int j=0;j<arr.length;j++){
+                if (l.charAt(i) == arr[j]) {
+                    count=count+1;
+               }
+            }
+        }
+        if (count==l.length())
+        {
             System.out.println(true);
         }
     }
