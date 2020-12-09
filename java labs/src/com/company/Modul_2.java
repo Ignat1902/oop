@@ -7,7 +7,7 @@ public class Modul_2 {
     //Tasks2();
     //Tasks3();
     //Tasks4();
-        // Tasks5();
+        //Tasks5();
        // Tasks6();
         Tasks07();
         //Tasks8();
