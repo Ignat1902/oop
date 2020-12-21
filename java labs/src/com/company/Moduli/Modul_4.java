@@ -5,14 +5,14 @@ import java.util.Scanner;
 
 public class Modul_4 {
     public static void main(String[] args) {
-        Tasks1();
-        Tasks2();
-        Tasks3();
-        Tasks4();
-        Tasks5();
-        Tasks6();
-        Tasks7();
-        Tasks8();
+       // Tasks1();
+        //Tasks2();
+        //Tasks3();
+        //Tasks4();
+        //Tasks5();
+        //Tasks6();
+       // Tasks7();
+       // Tasks8();
         Tasks9();
         Tasks10();
     }
